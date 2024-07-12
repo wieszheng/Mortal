@@ -58,7 +58,7 @@ jobs:
           CI_FROM: ${{ matrix.from }}
           IMAGE_NAME: ${{ env.DOCKERHUB_TAG }}:${{ matrix.arch }}-latest
         run: |
-          docker build . --file Dockerfile --tag ${{ env.DOCKERHUB_TAG }}:${{ matrix.arch }}-latest --build-args CI_FROM=${{ matrix.from }}
+          docker build -f ./Dockerfile --tag ${{ env.DOCKERHUB_TAG }}:${{ matrix.arch }}-latest --build-args CI_FROM=${{ matrix.from }}
 #      - name: Image digests
 #        run: |
 #          echo image digest: ${{ steps.docker_build.outputs.digest }}
