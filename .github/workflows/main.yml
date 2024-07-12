@@ -43,7 +43,7 @@ jobs:
           USERNAME: 100030720558
 #          PASSWORD: ${{ secrets.PASSWORD }}
         run: |
-          docker login $REGISTRY -u $USERNAME
+          docker login $REGISTRY --username=$USERNAME
 
       - name: Build and push
 #        uses: docker/build-push-action@v2
