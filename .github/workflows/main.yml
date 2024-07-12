@@ -37,10 +37,10 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
-      - name: Login to Docker Hub
-        env:
-          REGISTRY: ccr.ccs.tencentyun.com
-          USERNAME: 100030720558
+      # - name: Login to Docker Hub
+      #   env:
+      #     REGISTRY: ccr.ccs.tencentyun.com
+      #     USERNAME: 100030720558
 #          PASSWORD: ${{ secrets.PASSWORD }}
         # run: |
         #   docker login $REGISTRY --username=$USERNAME
