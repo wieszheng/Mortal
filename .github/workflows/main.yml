@@ -42,8 +42,8 @@ jobs:
           REGISTRY: ccr.ccs.tencentyun.com
           USERNAME: 100030720558
 #          PASSWORD: ${{ secrets.PASSWORD }}
-        run: |
-          docker login $REGISTRY --username=$USERNAME
+        # run: |
+        #   docker login $REGISTRY --username=$USERNAME
 
       - name: Build and push
 #        uses: docker/build-push-action@v2
@@ -58,7 +58,7 @@ jobs:
           CI_FROM: ${{ matrix.from }}
           IMAGE_NAME: ${{ env.DOCKERHUB_TAG }}:${{ matrix.arch }}-latest
         run: |
-          docker build -t $IMAGE_NAME .
+          docker build . --file Dockerfile --tag ${{ env.DOCKERHUB_TAG }}:${{ matrix.arch }}-latest --build-args CI_FROM=${{ matrix.from }}
 #      - name: Image digests
 #        run: |
 #          echo image digest: ${{ steps.docker_build.outputs.digest }}
