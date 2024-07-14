@@ -23,3 +23,42 @@
 + 必须在提供的字段中输入 WLAN 的 SSID 和密码
 + 输入 主机IP 这是运行主机软件的设备的IP地址和通信端口。此处未指定http://或端口！
 + 1001 应保留为端口。此端口用于数据通信，不应更改。此端口与端口1000下的主机web界面无关！
+
+
+### 🌱 Docker Setup
+
+
+#### 开始使用
+
+```shell
+docker run --name MortalMatrix -p 7000:7000 -p 7001:7001 --restart always -e TZ=Asia/Shanghai  whyet/awtrix2:latest 
+```
+
+#### Docker Compose
+
+请不要忘记在文件中添加您的主机接口：:
+
+```shell
+version: "3"
+
+services:
+  awtrix:
+    image: whyet/awtrix2
+    restart: unless-stopped
+    ports:
+      - "7000:7000"
+      - "7001:7001"
+  
+    volumes:
+      - ./data:/data
+
+    environment:
+      - TZ=Asia/Shanghai
+      - JAVA_TOOL_OPTIONS="-Duser.language=de -Duser.country=DE"
+      - AWTRIX_BETA=false
+      - AUTOUPDATE=true
+```
+
+#### Additional Ports:
+
+-p 80:80 对于服务需要此端口。如果此端口已被使用，可以在配置文件中更改。 
