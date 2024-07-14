@@ -5,7 +5,7 @@
 
 #### 🎉 首次连接
 
-![wifi](assets/wifiSearch.gif)
+![wifi](/assets/wifiSearch.gif)
 
 几秒钟后，控制器将搜索已知的 WiFi 网络
 
