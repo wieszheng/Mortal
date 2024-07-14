@@ -17,8 +17,8 @@
 +  WLAN密码为 “12345678”
 +  如果网页没有自动打开，则可以使用任何浏览器在IP “172.217.28.1” 下导航到设置页面。此页面如下：
 
-![hotspotConfig1](assets/hotspotConfig1.jpg)
-![hotspotConfig1](assets/hotspotConfig2.jpg)
+![hotspotConfig1](./assets/hotspotConfig1.jpg)
+![hotspotConfig1](./assets/hotspotConfig2.jpg)
 
 + 点击“WiFi”（左图），您将进入实际设置页面（右图）。
 + 必须在提供的字段中输入 WLAN 的 SSID 和密码
