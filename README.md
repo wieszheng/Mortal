@@ -7,7 +7,7 @@
 
 ![wifi](assets/wifiSearch.gif)
 
-几秒钟后，控制器将搜索已知的 WiFi 网络
+几秒钟后，控制器将搜索已知的 WiFi 网络.
 
 ![hotspot](assets/hotspot.gif)
 如果尚未配置Wifi连接，则矩阵上将显示文本“热点”。正如其名称所示，控制器现在将打开一个WLAN热点。对于任何WLAN设备，
