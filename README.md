@@ -4,24 +4,21 @@
 ### ☕ 说明
 
 #### 🎉 首次连接
-<p align="center">
-  <img alt="csharp" src="assets/wifiSearch.gif">
-</p>
+
+![wifi](assets/wifiSearch.gif)
+
 几秒钟后，控制器将搜索已知的 WiFi 网络
-<p align="center">
-  <img alt="csharp" src="https://github.com/wieszheng/Mortal/blob/master/assets/hotspot.gif">
-</p>
-[!img](https://github.com/wieszheng/Mortal/blob/master/assets/hotspotConfig2.jpg)
+
+![hotspot](assets/hotspot.gif)
 如果尚未配置Wifi连接，则矩阵上将显示文本“热点”。正如其名称所示，控制器现在将打开一个WLAN热点。对于任何WLAN设备，
 现在都可以通过热点配置控制器。
 
 +  使用SSID “Mortal Matrix” 连接到WLAN
 +  WLAN密码为 “12345678”
 +  如果网页没有自动打开，则可以使用任何浏览器在IP “172.217.28.1” 下导航到设置页面。此页面如下：
-<p align="center">
-  <img alt="csharp" src="assets/hotspotConfig1.jpg">
-    <img alt="csharp" src="assets/hotspotConfig2.jpg">
-</p>
+
+![hotspotConfig1](assets/hotspotConfig1.jpg)
+![hotspotConfig1](assets/hotspotConfig2.jpg)
 
 + 点击“WiFi”（左图），您将进入实际设置页面（右图）。
 + 必须在提供的字段中输入 WLAN 的 SSID 和密码
