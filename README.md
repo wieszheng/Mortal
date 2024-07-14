@@ -11,6 +11,7 @@
 <p align="center">
   <img alt="csharp" src="https://github.com/wieszheng/Mortal/blob/master/assets/hotspot.gif">
 </p>
+[!img](https://github.com/wieszheng/Mortal/blob/master/assets/hotspotConfig2.jpg)
 如果尚未配置Wifi连接，则矩阵上将显示文本“热点”。正如其名称所示，控制器现在将打开一个WLAN热点。对于任何WLAN设备，
 现在都可以通过热点配置控制器。
 
