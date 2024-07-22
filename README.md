@@ -63,6 +63,6 @@ services:
 
 -p 80:80 对于服务需要此端口。如果此端口已被使用，可以在配置文件中更改。 
 
-# Star History
+## Star History
 
 ![Star History Chart](https://api.star-history.com/svg?repos=wieszheng/Mortal&type=Date)
